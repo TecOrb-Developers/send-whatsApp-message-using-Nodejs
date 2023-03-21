@@ -4,7 +4,7 @@ Direact link to main website (https://developers.facebook.com/docs/whatsapp/clou
 
 
 What is purpose for this project?
-To send a whatApp message to a user who register on portal.
+- To send a whatApp message to a user who register on portal.
 
 
 What we have implemented in this project?
