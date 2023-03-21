@@ -10,7 +10,7 @@ import 'express-async-errors';
 import apiRouter from './routes/app';
 import logger from 'jet-logger';
 import { CustomError } from '@utils/errors';
-import adminRoutesFE from './routes/admin-panel';
+
 import { connect, disconnect } from '@utils/database'
 
 
@@ -64,20 +64,7 @@ app.use((err: Error | CustomError, _: Request, res: Response, __: NextFunction) 
 });
 
 
-/***********************************************************************************
- *                                  Front-end content
- **********************************************************************************/
 
-// Set views dir
-const viewsDir = path.join(__dirname, 'public/views');
-app.set('views', viewsDir);
-
-// Set static dir
-const staticDir = path.join(__dirname, 'public');
-app.use(express.static(staticDir));
-
-// Serve admin panel files
-app.use('/', adminRoutesFE)
 
 
 
