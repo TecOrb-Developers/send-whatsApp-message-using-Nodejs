@@ -53,6 +53,6 @@ HOST=localhost
 
 
 # postman  api url
-type get  "{host-url}/api/v1/user/sign-up"
+type post  "{host-url}/api/v1/user/sign-up"
 in body pass {role, name, email, phoneNumber, countryCode, dob} 
 
